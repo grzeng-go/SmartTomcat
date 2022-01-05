@@ -172,7 +172,7 @@ public class TomcatSettingsEditor extends SettingsEditor<TomcatRunConfiguration>
         @Override
         public boolean isFileVisible(VirtualFile file, boolean showHiddenFiles) {
 
-            ModuleManager moduleManager = ModuleManager.getInstance(project);
+            /*ModuleManager moduleManager = ModuleManager.getInstance(project);
             Module[] modules = moduleManager.getModules();
 
             for (Module module : modules) {
@@ -184,7 +184,9 @@ public class TomcatSettingsEditor extends SettingsEditor<TomcatRunConfiguration>
                 }
 
             }
-            return super.isFileVisible(file, showHiddenFiles);
+            return super.isFileVisible(file, showHiddenFiles);*/
+            // 全部文件夹可见
+            return true;
         }
     }
 
